@@ -1,0 +1,38 @@
+.footer1 {
+    width: 100%;
+    background-color: rgb(0, 90, 0);
+    padding: 10px;
+}
+
+.info {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 5px;
+    color: white;
+}
+.logo-footer {
+    display: flex;
+    justify-content: center;
+}
+    .logo-footer >h2 {
+        margin-top: 6px;
+        margin-left: 5px;
+    }
+.descricao, .bandeiraCartao {
+    display: flex;
+    margin-top: 10px;
+}
+.descricao > p {
+    margin-left: 5px;
+}
+.bandeiraCartao {
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 570px) {
+    .bandeiraCartao> img {
+        width: 100%;
+    }
+
+}

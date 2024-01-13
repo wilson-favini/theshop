@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>entrar</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="login">
+                <h2>Entrar</h2>
+            </div>
+            <label for="email">Usuário</label>
+            <div class="user">
+                <!--<label for="email">Usuário</label>-->
+                <input type="email" id="email" placeholder="Digite seu E-mail">
+                <button type="button" class="iconePerfil">
+                    <img class="" src="../imgs/perfil.png" alt="">
+                </button>
+            </div>
+            <label for="password">Senha</label>
+            <div class="senha">
+                <!--<label for="password">Senha</label>-->
+                <input type="password" id="password" placeholder="Digite sua senha">
+                <button type="button" class="iconeSenha">
+                    <img class="olhoAberto" src="../imgs/visível60.png" width="32" height="32" alt="">
+                    <img class="olhoFechado" id="olhoFechado" src="../imgs/invisível60.png" width="32" height="32" alt="">
+                </button>
+            </div>
+            <div class="forgetPassword">
+                <p>Esqueceu sua senha? <a href="">clique aqui</a></p>
+            </div>
+            <div class="btnEntrar">
+                <button id="botaoEntrar" type="button">Entrar</button>
+                <p>- ou -</p>
+            </div>
+            <div class="btnCriarConta">
+                <a href="./criarConta.html">
+                    <button type="button">Criar Conta</button>
+                </a>
+            </div>
+        </form>
+    </div>
+    <script>
+        let olhoFechado = document.querySelector("#olhoFechado");
+        olhoFechado.addEventListener("click", mostraSenha);
+        function mostraSenha () {
+            let senha = document.querySelector("#password");
+            if (olhoFechado != undefined) {
+                olhoFechado.style.display = "none";
+                olhoAberto.style.display = "block";
+                senha.setAttribute("type", "text");
+            } else {
+                console.log("Erro: " + olhoFechado);
+            }
+        }
+
+        let olhoAberto = document.querySelector(".olhoAberto");
+        olhoAberto.addEventListener("click", ocultaSenha);
+        function ocultaSenha () {
+            let senha = document.querySelector("#password");
+            if (olhoAberto != undefined) {
+                olhoAberto.style.display = "none";
+                olhoFechado.style.display = "block";
+                senha.setAttribute("type", "password");
+            } else {
+                console.log("Erro: " + olhoAberto);
+            }
+        }
+
+        function verificaSenha () {
+            let inputEmail = document.querySelector("#email");
+            let inputSenha = document.querySelector("#password");
+
+            if (!inputSenha.value) {
+                inputSenha.style.border = "1px solid red"
+            } else {
+                inputSenha.style.border = "1px solid Green"
+            }
+            if(!inputEmail.value) {
+                inputEmail.style.border = "1px solid red"
+            } else {
+                inputEmail.style.border = "1px solid Green"
+            }
+        }
+
+        let buttonEntrar = document.querySelector("#botaoEntrar")
+        .addEventListener("click", verificaSenha);
+        
+    </script>
+</body>
+</html>

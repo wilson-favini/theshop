@@ -1,0 +1,70 @@
+.main1 {
+    width: 100%;
+    min-height: 80vh;
+    padding: 10px;
+}
+
+.flex-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-product {
+    min-width: 260px;
+    max-height: 320px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+    .flex-product:hover {
+        box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.336);
+
+    }
+/* definição dos cards */
+.img-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.desc-item > button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.desc-item > button:hover {
+    background-color: rgb(0, 153, 0);
+} 
+.preco {
+    font-weight: bold;
+    
+}
+
+.flex-product, .desc-item > button {
+    border-radius: 5px;
+}
+
+@media (max-width: 660px) {
+    .main1 {
+        padding: 0;
+    }
+    .flex-container {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 570px) {
+    .main1 {
+        padding: 10px;
+    }
+    .flex-product {
+        width: 90%;
+    }    
+
+}

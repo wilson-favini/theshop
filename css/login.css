@@ -1,0 +1,94 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+}
+.container > form {
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+    max-width: 450px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.336);
+    display: block;
+}
+    .login {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+        color: green;
+    }
+    .senha, .user {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: 37px;
+        margin-bottom: 10px;
+    }
+    .user > input, .senha > input {
+        padding: 10px;
+        width: 100%;
+        border: 1px solid Green;
+        border-right: 1px solid black;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        outline: none;
+    }
+    .iconeSenha, .iconePerfil {
+        background-color: #ccc;
+        border: none;
+        border-top: 1px solid green;
+        border-top-right-radius: 5px;
+        border-right: 1px solid green;
+        border-bottom-right-radius: 5px;
+        border-bottom: 1px solid green;
+        cursor: pointer;
+    }
+    .iconeSenha > img {
+        height: 100%;
+        width: 100%;
+    }
+    .user > input:focus, .senha > input:focus {
+        border: 1px solid rgb(0, 63, 0);    
+    }
+    .btnEntrar > button, .btnCriarConta a > button {
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .btnEntrar > button {
+        color: #fff;
+        background-color: green;
+        border: none;
+    }
+    .btnCriarConta a > button {
+        border: solid 1px green;
+        color: green;
+        background-color: #fff;
+    }
+    .btnEntrar > p {
+            text-align: center;
+    }
+    .forgetPassword > p {
+        padding-bottom: 10px;
+    } 
+    .btnEntrar > button:hover, .btnCriarConta a > button:hover {
+        background-color: rgb(0, 88, 0);
+        color: #fff;
+    }
+
+    /*ícone dos olhos*/
+    .olhoAberto, .olhoFechado {
+        position: relative;
+    }
+    .olhoAberto {
+        display: none;
+    }
+    @media (max-width: 300px) {
+        .container > form {
+            width: 100%;
+        }
+    }

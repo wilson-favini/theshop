@@ -1,0 +1,61 @@
+.container {
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 800px;
+    background-color: #fff;
+}
+    .banner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 200px;
+    }
+    .banner > img {
+        width: 100%;
+    }
+    .container > form {
+        padding: 10px;
+    }
+    form > input, .secaoEndereco {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    input {
+        padding: 10px;
+        border: 1px solid rgba(0, 128, 0, 0.671);
+        border-radius: 5px;
+        outline: none;
+        width: 49%;
+        margin-left: 5px;
+    }
+    .nomeEmail, .sexo, .cepRua, .numeroBairro, .cidadeEstado, .complemento {
+        display: flex;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .acoes {
+        display: flex;
+        justify-content: end;
+        padding-top: 10px;
+    }
+    .acoes > button {
+        padding: 10px;
+        background-color: green;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+    @media (max-width: 700px) {
+        .banner {
+            display: none;
+        }
+    }

@@ -1,0 +1,13 @@
+Modelo Entidade Relacionamento (MER)
+
+requisitos para criar o banco de dados.
+
+Introdução
+o cliente solicitou uma base de dados, para ser utiliazda em sua loja virtual. a base de dados deve armazenar em uma de suas tabelas informações do usuário da página, para fins de autenticação. O usuário poderá virar um cliente, que deve ter informações importantes como endereço e telefone antes de realizar uma venda. Com isso, é sabido que deve ser criado uma tabela de produtos que se relacione com sua categoria.
+
+regra de negocios:
+ENDERECO - OBRIGATORIO O CADASTRO DE UM ENDEREÇO (NO MAXIMO 1) (1,1)
+
+TELEFONE - O CLIENTE NÃO É OBRIGADO A INFORMAR O TELEFONE, PORÉM CASO QUEIRA, ELE PODE INFORMAR MAIS DE UM. (0, N)
+
+

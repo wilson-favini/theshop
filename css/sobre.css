@@ -1,0 +1,15 @@
+.principal {
+    width: 100%;
+    min-height: 80vh;
+    padding: 10px;
+}
+.sobre {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px;
+}
+
+.sobre > h3 {
+    color: green;
+}

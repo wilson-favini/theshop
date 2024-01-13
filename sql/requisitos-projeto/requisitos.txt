@@ -1,0 +1,47 @@
+Considere o diagrama de classe a seguir. O trabalho consiste em implementar um sistema de pedidos de uma livraria onde são registrados as compras de livros de clientes, e compras da livraria dos fornecedores.
+
+A interface do usuário (pode ser em texto mesmo) deve fornecer as opções de :
+
+1-cadastrar um pedido de Cliente:
+
+1.1 - criar e cadastra o cliente
+
+1.2 - criar e cadastrar um pedido e inserir à liste de pedidos deste cliente
+
+1.3 - ao cadastrar o pedido, cadastrar e inserir o livro à lista de livros do pedido
+
+1.4 - Guardar o cliente em uma lista de clientes
+
+2 - cadastrar um pedido ao fornecedor
+
+2.1 - Criar e cadastrar o fornecedor
+
+2.2 - criar e cadastrar um pedido ao fornecedor e inserir à lista de pedidos deste fornecedor
+
+2.3 -ao cadastrar o pedido, cadastrar e inserir o livro à lista de livros do pedido
+
+2.4 Guardar o fornecedor em uma lista de fornecedores
+
+3 - Calcular total de Vendas
+
+4 - Calcular o total de compras
+
+Especificação das classes:
+
+Pedido - 
+
+Classe abstrata - método - calcValor() - Calcula o valor total do pedido
+
+PedidoCliente - 
+
+Realizar Pagamento() Imprimir no console o a descrição dos valores de cada livro e quantidade e no final o total da compra
+
+enviarRemessa() imprimea data de remessa
+
+recuperarPedido()Imprime a lista de livros 
+
+PedidoFornecedor
+
+Realizar Pagamento() Imprimir no console o a descrição dos valores de cada livro e quantidade e no final o total da compra
+
+recuperarPedido() Imprime a lista de livros

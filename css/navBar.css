@@ -1,0 +1,141 @@
+:root {
+    --corNavBar: rgb(0, 90, 0);
+    --corBotao: rgb(0, 90, 0);
+    --corTexto: white;
+} 
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+.header1 {
+    width: 100%;
+    height: 90px;
+    background-color: var(--corNavBar);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav1 {
+    display: inherit;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+/*barra de pesquisa*/
+.pesquisa {
+    width: 41%;
+    display: block;
+}
+    .inputPesquisa {
+        width: 100%;
+        padding: 10px 40px 10px 10px;
+        border: none;
+        border-radius: 20px;
+    }
+    .inputPesquisa:focus {
+        outline: 1px solid rgb(43, 255, 0);
+    }
+    .botaoPesquisa {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        margin-left: -40px;
+        cursor: pointer;
+    }
+    .botaoPesquisa, .inputPesquisa {
+        margin-top: 15px;
+    }
+
+
+ .botaoNav {
+    background-color: var(--corBotao);
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+ }
+ .botaoNav:hover {
+    background-color: rgb(0, 109, 0);
+ }
+ .botaoNav{
+    padding: 10px;
+    color: var(--corTexto);
+ }
+ /*seção do menu oculto*/
+.botaoMenu, .btn-close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+ .menuOculto {
+    position: fixed;
+    width: 300px;
+    background-color: transparent;
+    z-index: 1;
+    right: -320px;
+    top: 0;
+    transition: .2s;
+    box-shadow: 15px 9px 15px rgba(0, 0, 0, 0.336);
+ }
+  
+    .menuContainer {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(0, 112, 9);
+        padding: 5px;
+    }
+    .conteudo {
+        padding-bottom: 0px;
+    }
+    .conteudo, .btnNavegacao {
+        display: flex;
+        flex-direction: column;
+    }
+    .btnNavegacao a > button {
+        width: 90%;
+        margin: auto;
+    }
+
+    .btnNavegacao a > button {
+        padding: 15px;
+        cursor: pointer;
+        background-color: green;
+        border: 2px solid green;
+        margin-top: 5px;
+        color: white;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .btnNavegacao a > button:hover {
+        border-color: greenyellow;
+    }
+    @media (min-width: 550px) {
+        .botaoMenu {
+            display: none;
+        }
+    }
+    @media (max-width: 550px) {
+        .pesquisa {
+            width: 50%;
+        }
+        .navegacao a > .botaoNav {
+            display: none;
+        }
+        .iconeHamburguer {
+            min-width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .iconeHamburguer > .botaoMenu {
+            margin: auto;
+        }
+    }
+
+    @media (max-width: 300px) {
+        .menuOculto {
+            width: 90%;
+        }
+    }
